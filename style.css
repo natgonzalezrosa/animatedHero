@@ -1,0 +1,45 @@
+#hero_banner {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0 auto;
+}
+  
+#hero_banner img {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+@keyframes FadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+
+    40% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+  
+#hero_banner img.top {
+  animation-name: FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-direction: alternate;
+}
